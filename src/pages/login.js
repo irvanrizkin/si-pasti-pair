@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-screen gap-x-8  mx-8 py-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center h-screen gap-x-8  mx-8 py-8">
       <div className="flex flex-col justify-between h-screen min-w-[656px] min-h-[960px] mx-8 py-8">
         {/* Card Header */}
         <div className="flex justify-between">
@@ -74,12 +74,12 @@ const Login = () => {
               className="w-full">
               Masuk
             </Button>
-            <div class="relative flex py-5 items-center">
-              <div class="flex-grow border-t-2 border-emphasis-on_surface-small rounded-full"></div>
-              <span class="flex-shrink mx-4 text-custom-neutral-500 text-Overline">
+            <div className="relative flex py-5 items-center">
+              <div className="flex-grow border-t-2 border-emphasis-on_surface-small rounded-full"></div>
+              <span className="flex-shrink mx-4 text-custom-neutral-500 text-Overline">
                 ATAU
               </span>
-              <div class="flex-grow border-t-2 border-emphasis-on_surface-small rounded-full"></div>
+              <div className="flex-grow border-t-2 border-emphasis-on_surface-small rounded-full"></div>
             </div>
           </div>
         </div>
@@ -114,8 +114,8 @@ const Login = () => {
         {/* End of Footer */}
       </div>
 
-      <div className="min-h-[960px] min-w-[688px]">
-        <Image src={LoginImage} alt="Login Image" className="h-screen" />
+      <div className="invisible lg:visible">
+        <Image src={LoginImage} alt="Login Image" className="w-full" />
       </div>
     </div>
   );
